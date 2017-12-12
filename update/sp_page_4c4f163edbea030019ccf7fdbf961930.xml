@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css/>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <id>backlog_list</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-11-24 09:29:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4c4f163edbea030019ccf7fdbf961930</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>backlog_list</sys_name>
+        <sys_package display_value="AT&amp;T Resource Only" source="x_146034_at_t_reso">2c4fcdd0db22030019ccf7fdbf9619f4</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AT&amp;T Resource Only">2c4fcdd0db22030019ccf7fdbf9619f4</sys_scope>
+        <sys_update_name>sp_page_4c4f163edbea030019ccf7fdbf961930</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-11-24 09:41:56</sys_updated_on>
+        <title>Backlog list</title>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=4c4f163edbea030019ccf7fdbf961930"/>
+</record_update>

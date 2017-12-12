@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="AT&amp;T Requests" max_length="40" name="x_146034_at_t_reso_at_t_requests" type="collection">
+        <element label="Business Need" mandatory="true" max_length="5000" name="business_need" type="string"/>
+        <element label="Closed" max_length="40" name="closed" read_only="true" type="glide_date_time"/>
+        <element label="Comments" max_length="4000" name="comments" type="journal_input"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Created by" max_length="32" name="created_byy" read_only="true" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element function_definition="True if the correlation of reqested dates ar ok to eac other and to the submission date." function_field="true" label="Dates OK" max_length="40" name="dates_ok" read_only="true" type="boolean"/>
+        <element choice="1" label="Domain" mandatory="true" max_length="50" name="domain" type="string">
+            <choice>
+                <element label="Chief Data" value="111110100"/>
+                <element label="Corporate Business Applications" value="141120100"/>
+                <element label="Global Infrastructure ans CIO Services" value="181120100"/>
+            </choice>
+        </element>
+        <element label="GeCEP" max_length="15" name="gecep" type="integer"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="isOrder=true" label="Priority Sort" max_length="40" name="priority_sort" type="integer"/>
+        <element label="Project Name" mandatory="true" max_length="100" name="project_name" type="string"/>
+        <element active="false" calculation="(function calculatedFieldValue(current) {&#13;&#10;&#9;&#13;&#10;&#9;var gd =new GlideDate();&#13;&#10;&#9;month = gd.getMonthNoTZ();&#13;&#10;&#9;day = gd.getDayOfMonthNoTZ();&#13;&#10;&#9;year = gd.getYearNoTZ();&#13;&#10;&#9;year = year.toString().substr(-2);&#13;&#10;&#9;&#13;&#10;&#9;var gt = new GlideTime();&#13;&#10;&#9;hour = gt.getHourOfDayLocalTime();&#13;&#10;&#9;min = gt.getMinutesLocalTime();&#13;&#10;&#9;&#13;&#10;&#9;if (hour &lt; 10) {&#13;&#10;&#9;&#9;hour = '0' + hour;&#13;&#10;&#9;}&#13;&#10;&#9;if (min &lt; 10) {&#13;&#10;&#9;&#9;min = '0' + min;&#13;&#10;&#9;}&#13;&#10;&#9;&#13;&#10;&#9;rnd = Math.floor((Math.random() * 100));&#13;&#10;&#9;&#13;&#10;&#9;RecNo = 'ATT' + month + day + year + hour + min + rnd;&#13;&#10;&#9;return RecNo;  // return the calculated value&#13;&#10;&#9;&#13;&#10;})(current);" default="please submit" label="Record Number" max_length="15" name="record_number" read_only="true" type="string"/>
+        <element label="Requested Start Date" mandatory="true" max_length="40" name="requested_start_date" type="glide_date"/>
+        <element choice="3" default="2" label="Request State" max_length="20" name="request_state" read_only="true" type="string">
+            <choice>
+                <element label="Backlog" sequence="1" value="2"/>
+                <element label="Iterated" sequence="2" value="3"/>
+                <element label="Closed" sequence="3" value="4"/>
+            </choice>
+        </element>
+        <element choice="3" default="20" label="Request Status" max_length="20" name="request_status" read_only="true" type="string">
+            <choice>
+                <element label="DPM to Prioritize" sequence="0" value="20"/>
+                <element label="Awaiting Architect" sequence="1" value="30"/>
+                <element label="In Design" sequence="2" value="31"/>
+                <element label="In Pricing" sequence="3" value="32"/>
+                <element label="Awaiting IBM Decision" sequence="4" value="33"/>
+                <element label="Awaiting Lead Delivery Resource" sequence="5" value="34"/>
+                <element label="Lead Resource Assigned" sequence="6" value="35"/>
+                <element label="On Hold" sequence="7" value="36"/>
+                <element label="Awaiting Customer Input" sequence="8" value="37"/>
+                <element label="Complete" sequence="9" value="40"/>
+                <element label="Cancelled" sequence="10" value="41"/>
+            </choice>
+        </element>
+        <element label="Submitted" max_length="40" name="submitted" type="boolean"/>
+        <element label="Requested Completion Date" mandatory="true" max_length="40" name="target_date" type="glide_date"/>
+        <element label="Updated by" max_length="32" name="updated_by" read_only="true" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="record_number"/>
+        </index>
+        <index name="index2">
+            <element name="updated_by"/>
+        </index>
+        <index name="index3">
+            <element name="created_byy"/>
+        </index>
+    </element>
+</database>

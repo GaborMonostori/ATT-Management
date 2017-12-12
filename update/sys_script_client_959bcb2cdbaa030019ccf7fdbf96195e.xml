@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>request_status</field>
+        <global>true</global>
+        <messages/>
+        <name>State update on Status change</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '') {
+		return;
+	}
+	if (newValue == 10) {
+		g_form.setValue('request_state', 1);
+	} else if (newValue == 20) {
+		g_form.setValue('request_state', 2);
+	} else if (newValue < 40) {
+		g_form.setValue('request_state', 3);
+	} else {
+		g_form.setValue('request_state', 4);
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-11-17 13:06:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>959bcb2cdbaa030019ccf7fdbf96195e</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>State update on Status change</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AT&amp;T Resource Only" source="x_146034_at_t_reso">2c4fcdd0db22030019ccf7fdbf9619f4</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AT&amp;T Resource Only">2c4fcdd0db22030019ccf7fdbf9619f4</sys_scope>
+        <sys_update_name>sys_script_client_959bcb2cdbaa030019ccf7fdbf96195e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-11-24 12:52:47</sys_updated_on>
+        <table>x_146034_at_t_reso_at_t_requests</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">c770977adb6e030019ccf7fdbf961920</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-11-24 13:07:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9c0113fadb6e030019ccf7fdbf961983</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>AT&amp;T Requests</sys_name>
+        <sys_package display_value="AT&amp;T Resource Only" source="x_146034_at_t_reso">2c4fcdd0db22030019ccf7fdbf9619f4</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AT&amp;T Resource Only">2c4fcdd0db22030019ccf7fdbf9619f4</sys_scope>
+        <sys_update_name>sp_instance_9c0113fadb6e030019ccf7fdbf961983</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-11-24 15:55:57</sys_updated_on>
+        <title>AT&amp;T Requests</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<h1 style=\"text-align: left;\">&nbsp;</h1>\n<h1 style=\"text-align: right; padding-left: 30px;\"><strong>My AT&amp;T Requests &nbsp;&nbsp;&nbsp; <br /></strong></h1>\n<p>&nbsp;</p>\n<p style=\"text-align: right;\">&nbsp;</p>\n<p>&nbsp;</p>",
+		"displayValue": "<h1 style=\"text-align: left;\">&nbsp;</h1>\n<h1 style=\"text-align: right; padding-left: 30px;\"><strong>My AT&amp;T Requests &nbsp;&nbsp;&nbsp; <br /></strong></h1>\n<p>&nbsp;</p>\n<p style=\"text-align: right;\">&nbsp;</p>\n<p>&nbsp;</p>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=9c0113fadb6e030019ccf7fdbf961983"/>
+</record_update>

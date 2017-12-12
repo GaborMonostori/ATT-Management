@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-11-22 15:01:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2ee7951adbe2030019ccf7fdbf9619ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Move to Awaiting Customer Input status.x_146034_at_t_reso.att_admin</sys_name>
+        <sys_package display_value="AT&amp;T Resource Only" source="x_146034_at_t_reso">2c4fcdd0db22030019ccf7fdbf9619f4</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AT&amp;T Resource Only">2c4fcdd0db22030019ccf7fdbf9619f4</sys_scope>
+        <sys_ui_action display_value="Move to Awaiting Customer Input status">a84b895edba2030019ccf7fdbf9619ea</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_2ee7951adbe2030019ccf7fdbf9619ab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-11-22 15:01:27</sys_updated_on>
+        <sys_user_role display_value="x_146034_at_t_reso.att_admin" name="x_146034_at_t_reso.att_admin">d52c7958db62030019ccf7fdbf96194f</sys_user_role>
+    </sys_ui_action_role>
+</record_update>
